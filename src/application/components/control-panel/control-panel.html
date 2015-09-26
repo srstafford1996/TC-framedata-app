@@ -1,0 +1,43 @@
+<div class="tc-control-panel" ng-class="{'tc-control-panel-minimize': minimized}">
+
+    <!-- Header -->
+    <button class="tc-control-panel-header" ng-click="toggleMinimize()">
+        <div class="container cp-header-container">
+            <div class="col-md-2">
+                <span class="TC-LOGO-HERE"> Tekken Chicken v0.2 </span>
+            </div>
+
+            <div class="col-md-4 col-md-offset-2">
+                <span class="cp-header-selected-attk"> Selected: <strong>{{selectedAttack.Command}}</strong> </span>
+            </div>
+            <div class="cp-header-module col-md-2 col-md-offset-2">
+
+                <span>
+                    {{currentCharacter.name}}
+                </span>
+
+            </div>
+
+        </div>
+    </button>
+    <!-- End Header -->
+
+    <div class="tc-control-panel-body">
+        <div class="container cp-body-container">
+            <div class="cp-body-module col-md-4 col-md-offset-4">
+                <div class="attack-preview-container">
+                    <img ng-if="selectedAttack.gif != null" ng-src = "/res/gifs/{{currentCharacter.gif_dir}}/{{selectedAttack.gif}}" /> 
+                    <span ng-if="selectedAttack.gif == null"> No Preview Available </span>
+                </div>
+            </div>
+            <div class="cp-body-module col-md-2 col-md-offset-2">
+                <ul class="cp-character-list">
+                    <li ng-repeat="(i, character) in characters">
+                        <button ng-click="select_character(character)"> {{character.name}} </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

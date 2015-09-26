@@ -1,0 +1,5 @@
+build
+node_modules
+src/res/gifs
+src/res/images
+src/bower_components

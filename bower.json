@@ -1,0 +1,16 @@
+{
+  "name": "LemonNotebook",
+  "version": "0.0.1",
+  "authors": [
+    "Stephen Stafford <srstafford1996@gmail.com>"
+  ],
+  "description": "A web app to help LoL players through champ select.",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-bootstrap": "~0.13.4",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-sass": "~3.3.5",
+    "requirejs": "~2.1.20"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "tc-framedata-app",
+  "description": "An application to do stuff for Tekken players.",
+  "author": "Stephen Stafford",
+  "license": "MIT",
+  "scripts": {
+    "install": "bower install",
+    "start": "node test-server/server.js"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "body-parser": "^1.14.0",
+    "morgan": "^1.6.1"
+  }
+}

@@ -1,0 +1,173 @@
+
+$cp-color: #DDD;
+$cp-height: 200px;
+
+$cp-header-color: #888;
+$cp-header-height: 40px;
+
+
+.tc-control-panel{
+    background-color: $cp-color;
+
+    width: 100%;
+    height: $cp-height;
+
+    position: fixed;
+    bottom: 0px;
+
+    transition: 0.5s linear all;
+}
+
+.tc-control-panel-minimize{
+    transition: 0.5s linear all;
+    height: $cp-header-height;
+}
+
+.tc-control-panel-header{
+
+    background-color: $cp-header-color;
+
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+
+    width: 100%;
+    height: $cp-header-height;
+
+    outline: none;
+
+    .cp-header-container{
+        height: 100%;
+    }
+
+    .cp-header-module{
+
+        height: 100%;
+
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+
+        padding: 0px;
+
+        span{
+            display: block;
+
+            width: 100%;
+            height: $cp-header-height;
+
+            line-height: $cp-header-height;
+            text-align: center;
+        }
+
+        .cp-header-module-button{
+            display: block;
+
+            border: none;
+
+            height: 100%;
+            width: 100%;
+            background-color: $cp-header-color;
+        }
+
+    }
+
+    .TC-LOGO-HERE{
+
+        display: inline-block;
+        vertical-align: middle;
+
+        margin: auto;
+
+        height: $cp-header-height;
+
+        line-height: $cp-header-height;
+
+        font-weight: 600;
+        font-size: 1.1em;
+        color: #FFF;
+
+    }
+
+    .cp-header-selected-attk{
+
+        display: inline-block;
+        vertical-align: middle;
+
+
+        height: $cp-header-height;
+        width: 100%;
+
+        text-align: center;
+
+        line-height: $cp-header-height;
+
+    }
+}
+
+
+.tc-control-panel-body{
+
+    width: 100%;
+    height: $cp-height - $cp-header-height;
+
+    .cp-body-container{
+        height: 100%;
+
+        .cp-body-module{
+            padding: 0px;
+            height: 100%;
+        }
+
+        .cp-character-list{
+
+            background-color: #FFF;
+
+            width: 100%;
+            height: 100%;
+
+            overflow: auto;
+
+            padding: 0px;
+
+            li{
+                list-style: none;
+
+                text-align: center;
+
+                button{
+                    display: block;
+
+                    background-color: inherit ;
+
+                    width: 100%;
+
+                    border: none;
+
+                    padding: 10px 0px;
+                }
+
+                button:hover{
+                    background-color: #666;
+                }
+            }
+
+        }
+    }
+
+    .attack-preview-container{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        img{
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        span{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<table class="table table-hover framedata-table">
+    <thead>
+        <th> Command </th>
+        <th> Startup </th>
+        <th> Block </th>
+        <th> Hit </th>
+        <th> CH </td>
+        <th> Damage </th>
+        <th> Orientation </th>
+    </thead>
+        
+    <tr ng-repeat="(k, attack) in attackSet" ng-id="attackRow{{k}}" ng-class="{active: $parent.active == k}" ng-click="selectAttack(k)">
+            <td class="command"> <b>{{attack.Command}}</b> </td>
+            <td> {{attack.Frames}} </td>
+            <td> {{attack['On Block']}} </td>
+            <td> {{attack['On Hit']}} </td>
+            <td> {{attack['CH']}} </td>
+            <td> {{attack['Damage']}} </td>
+            <td> {{attack['Orientation']}} </td></tr>
+
+</table>

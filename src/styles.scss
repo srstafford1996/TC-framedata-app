@@ -1,0 +1,13 @@
+
+//LIB STYLES
+@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+//GLOBAL STYLES
+body{
+    background-color: #FFF;
+}
+
+//COMPONENT STYLES
+@import 'src/application/components/framedata-table/framedata-table';
+@import 'src/application/components/control-panel/control-panel';

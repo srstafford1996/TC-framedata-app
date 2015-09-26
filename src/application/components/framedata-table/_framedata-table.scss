@@ -1,0 +1,17 @@
+.framedata-table{
+    text-align: center;
+    border-left: 1px solid $table-border-color;
+    border-right: 1px solid $table-border-color;
+    
+    
+    thead{
+        background-color: #FFF;
+    }
+    th{
+        text-align: center;
+    }
+    .command{
+        width: 150px;
+        text-align: left;
+    }
+}
